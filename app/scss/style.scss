@@ -621,6 +621,39 @@
     color: #ff3c57;
     display: inline-block;
   }
+  &__text{
+    margin-bottom: 25px;
+  }
+}
+.page-404{
+  padding: 10px 0 40px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 570px;
+    width: 100%;
+  }
+  &__title{
+    color: #28384f;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 48px;
+
+  }
+  &__text{
+    margin-bottom: 55px;
+    max-width: 470px;
+ }
+  &__link{
+   background-color: #ff3c57;
+   text-transform: uppercase;
+   color: #fff;
+   padding: 14px 35px;
+   font-weight: 400;
+  }
 }
 .footer {
   padding: 30px 0;
