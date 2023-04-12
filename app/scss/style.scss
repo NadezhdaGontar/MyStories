@@ -626,41 +626,6 @@
   &__item-box {
     padding: 30px 40px;
   }
-
-  &__item-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  &__item-author,
-  &__item-date {
-    padding-left: 30px;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      left: 0;
-      top: 4px;
-    }
-  }
-
-  &__item-author {
-    color: #000;
-  }
-
-  &__item-author::before {
-    background-image: url(../images/icons/user.svg);
-
-  }
-
-  &__item-date::before {
-    background-image: url(../images/icons/time.png);
-  }
-
   &__item-title {
     font-size: 20px;
     color: #ff3c57;
@@ -689,6 +654,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+  }
+}
+.blog-box{
+  display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  &__author,
+  &__date{
+    padding-left: 30px;
+    position: relative;
+      &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 4px;
+    }
+  }
+  &__author::before {
+    background-image: url(../images/icons/user.svg);
+  }
+  &__date::before {
+    background-image: url(../images/icons/time.png);
+  }
+   &__author {
+    color: #000;
   }
 }
 
@@ -1537,4 +1529,160 @@ position: relative;
     }
   }
 }
+.blog-page{
+  padding: 120px 0 60px;
+  &__item--slider{
+    .blog-page__item-box{
+      margin-top: -8px;
+    }
+  }
+  &__slider{
+    .slick-next,
+    .slick-prew{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      width: 40px;
+      height: 40px;
+      background-color: #ff3c57;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
+      path{
+        fill: #fff;
+      }
+    }
+    .slick-disabled{
+      background-color: #fff;
+      box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+      path{
+        fill: #ff3c57;
+      }
+    }
+    .slick-next{
+      right: 40px;
+    }
+    .slick-prew{
+      left: 40px;
+    }
+  }
+ 
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 770px;
+    margin-right: 30px;
+  }
+  &__aside{
+    width: 370px;
+  }
+  &__item{
+    margin-bottom: 60px;
+     &.blog-page__item--no-image{
+      border: 1px solid #ececec;
+      box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+    }
+  }
+  &__item-link{
+    display: block;
+    color: #0f0f0f;
+    transition: all .3s;
+     &:hover{
+      color: #ff3c57;
+    }
+  }
+  &__img{
+    min-width: 750px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  &__item-box{
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 40px;
+  }
+  &__item-title{
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .blog-box{
+    justify-content: start;
+    &__author{
+      margin-right: 30px;
+    }
+  }
+}
+.person{
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 40px 25px;
+  &__img{
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0 auto 35px;
+  }
+  &__name{
+    color: #0f0f0f;
+    font-size: 18px;
+  }
+  &__position{
+    color: #ff3c57;
+  }
+  &__text{
+    margin-bottom: 25px;
+  }
+}
+.latest-post{
+  padding: 35px 30px 40px;
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  &__subtitle{
+    color:#0f0f0f;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  &__item{
+    margin-bottom: 20px;
+    display: flex;
+    & + .latest-post__item{
+      border-top: 1px solid #ececec;
+      padding-top: 20px;
+    }
+  }
+  &__img-link{
+    display: block;
+    margin-right: 20px;
+    min-width: 80px;
+    
+  }
+  &__img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  &__title-link{
+    font-size: 18px;
+    color: #0f0f0f;
+    line-height: 28px;
+  }
+  &__date{
+    color: #808080;
+  }
+}
+
+
 @import"media";
