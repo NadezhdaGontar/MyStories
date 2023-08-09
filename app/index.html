@@ -36,8 +36,28 @@
             </a>
           </div>
         </div>
-        <div class="header__menu-inner">
-          <button class="active header__menu-btn">
+       <div class="header__user-nav-media">
+            <div class="header__user-nav-media-wrapper">
+                <a class="header__user-nav-media-link" href="#">Вход</a>
+                <span>|</span>
+                <a href="#">Регистрация</a>
+            </div>
+            <a class="header__user-nav-media-link" href="#">
+              <img
+                class="header__user-nav-media-link-img"
+                src="images/icons/heart.svg"
+                alt="user icon">
+              <span class="header__user-nav-media-num">0</span>
+            </a>
+            <a class="header__user-nav-media-link" href="#">
+              <img class="header__user-nav-media-link-img"
+                src="images/icons/cart.svg"
+                alt="user icon">
+              <span class="header__user-nav-media-num">0</span>
+            </a>
+          </div> 
+        <div class="header__menu-inner"><!--У него это nav с классом menu-->
+          <button class="active header__menu-btn"><!--У него класс menu__btn-->
             <span></span>
           </button>
           <ul class="header__menu-list">
@@ -65,20 +85,32 @@
         <div class="container">
           <div class="slider__inner">
            <div class="slider__item">
-            <img class="slider__item-img" src="images/slider_one.jpg" alt="">
+            <h1 class="slider__title">
+              Универсальные новинки 2023
+            </h1>
+            <p class="slider__text">Наши дизайнеры подобрали универсальный капсульный гардероб спецально для тех, кто хочет быть ярким и иметь неповторий стиль!</p>
+            <a class="slider__link" href="#">ПОДРОБНЕЕ</a>
            </div>
-           <div class="slider__item">
-            <img class="slider__item-img" src="images/slider_two.jpg" alt="">
+            <div class="slider__item">
+            <h1 class="slider__title">
+              Натуральные ткани
+            </h1>
+            <p class="slider__text">Хлопок, лён, шёлк...Что может быть лучше для жаркого лета! Шикарные модели, актуальный крой, интересные детали кроя</p>
+            <a class="slider__link" href="#">ПОДРОБНЕЕ</a>
            </div>
-           <div class="slider__item">
-            <img class="slider__item-img" src="images/slider_three.jpg" alt="">
-           </div>
+            <div class="slider__item">
+            <h1 class="slider__title">
+              Спортивный шик в деталях
+            </h1>
+            <p class="slider__text">Если ваша жизнь связана со спортом, то вы обязательно найдете что-то для себя в нашей новой коллекции спортивной одежды</p>
+            <a class="slider__link" href="#">ПОДРОБНЕЕ</a>
+           </div>   
           </div>
         </div>
       </section>   
       <section class="about">
         <div class="container">
-          <h2 class="title">О нас</h2>
+          <h2 class="title">О бренде</h2>
           <p class="about__text">
             Значимость этих проблем настолько очевидна, что сплочённость команды профессионалов выявляет срочную потребность экономической целесообразности принимаемых решений. И нет сомнений, что диаграммы связей, вне зависимости от их уровня, должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь является качественно новой ступенью поставленных обществом задач. Господа, глубокий уровень погружения выявляет срочную потребность существующих финансовых и административных условий. Учитывая ключевые сценарии поведения, дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки существующих финансовых и административных условий. 
           </p>
@@ -96,13 +128,13 @@
           <div class="categories__inner">
             <div class="categories__item" style="background-image: url(images/categories/news.jpg);">
               <h4 class="categories__subtitle">
-                Стильное лето
+                Платья
               </h4>
               <a class="categories__link" href="#">
                 Посмотреть
               </a>
             </div>
-                <div class="categories__item" style="background-image: url(images/categories/top.jpg);">
+              <div class="categories__item" style="background-image: url(images/categories/top.jpg);">
               <h4 class="categories__subtitle">
                 Топы
               </h4>
@@ -167,7 +199,7 @@
           <div class="product-item__box">
           <div class="star" data-rateyo-rating="4.1"></div>
           <h4 class="product-item__title">
-           Летняя блуза для стильного отдыха
+           Шёлковый топ
           </h4>
           <div class="product-item__price">
             <div class="product-item__new-price">1500.00</div>
@@ -182,10 +214,9 @@
           </div>
           </div>
         </div>
-
-         <div class="product-item">
+        <div class="product-item">
           <div class="product-item__img-box">
-            <img class="product-item__images" src="images/product/2.jpg" alt="product">
+            <img class="product-item__images" src="images/product/1.jpg" alt="product">
           <div class="product-item__link-box">
             <a class="product-item__link" href="#">
              <svg 
@@ -214,7 +245,7 @@
           <div class="product-item__box">
           <div class="star" data-rateyo-rating="4.5"></div>
           <h4 class="product-item__title">
-            Лонгослив 
+            Щёлковый топ
           </h4>
           <div class="product-item__price">
             <div class="product-item__new-price">2300.00</div>
@@ -227,13 +258,10 @@
             </p>
             </div>
           </div>
-        </div>
-
-         
-         
-         <div class="product-item">
+        </div>  
+        <div class="product-item">
           <div class="product-item__img-box">
-            <img class="product-item__images" src="images/product/3.jpg" alt="product">
+            <img class="product-item__images" src="images/product/1.jpg" alt="product">
           <div class="product-item__link-box">
             <a class="product-item__link" href="#">
              <svg 
@@ -258,11 +286,11 @@
             </a>
            </div> 
           </div>
-            <div class="product-item__wrapper-box">
+          <div class="product-item__wrapper-box">
           <div class="product-item__box">
           <div class="star" data-rateyo-rating="4"></div>
           <h4 class="product-item__title">
-            Блузка для офиса
+            Шёлковый топ
           </h4>
           <div class="product-item__price">
             <div class="product-item__new-price">3200.00</div>
@@ -301,8 +329,8 @@
       </section>
       <section class="promo">
         <div class="container"> 
-          <h2 class="title">Не пропусти сезонные скидки!</h2>
-            <div id="promo__clock" class="promo__clock" data-time='2023-08-08'>
+          <h2 class="title promo__title">Не пропусти сезонные скидки!</h2>
+            <div id="promo__clock" class="promo__clock" data-time='2023-09-09'>
               <div class="promo__clock-item">
                 <span class="promo__days"></span>
                 <div class="promo__smalltext">Дней</div>
@@ -359,7 +387,7 @@
               <div class="blog-box">
                   <a class="blog-box__author" href="#">Софья Зайцева</a>
                   <div class="blog-box__date">05 Мая, 2023</div>
-                </div><!--закр blog-box-->
+                </div>
               <a class="blog__item-titlelink" href="#">
                 <h4 class="blog__item-title">
                   Стильные аксессуары
@@ -376,7 +404,7 @@
            <div class="blog-box">
                   <a class="blog-box__author" href="#">Марго Мусто</a>
                   <div class="blog-box__date">19 Июня, 2023</div>
-                </div><!--закр blog-box-->
+                </div>
             <a class="blog__item-titlelink" href="#">
               <h4 class="blog__item-title">
                 Спортивный шик
@@ -393,7 +421,7 @@
             <div class="blog-box">
                   <a class="blog-box__author" href="#">Макс Лис</a>
                   <div class="blog-box__date">01 Марта, 2023</div>
-            </div><!--закр blog-box-->
+            </div>
             <a class="blog__item-titlelink" href="#">
               <h4 class="blog__item-title">
                 Магия блузок
@@ -408,7 +436,27 @@
   </main>
    <footer class="footer">
     <div class="container">
-      <nav class="footer__nav-inner">
+        <div class="footer__user-nav">
+          <div class="footer__user-nav-wrapper">
+            <a class="footer__user-nav" href="#">Вход</a>
+              <span>|</span>
+            <a href="#">Регистрация</a>
+          </div>
+          <a class="footer__user-nav-link" href="#">
+              <img
+                class="footer__user-nav-link-img"
+                src="images/icons/heart.svg"
+                alt="user icon">
+              <span class="footer__user-nav-num">0</span>
+            </a>
+            <a class="footer__user-nav-link" href="#">
+              <img class="footer__user-nav-link-img"
+                src="images/icons/cart.svg"
+                alt="user icon">
+              <span class="footer__user-nav-num">0</span>
+            </a>
+          </div>
+          <nav class="footer__nav-inner">
         <ul class="footer__menu">
           <li class="footer__menu-item">
             <a href="#" class="footer__menu-link">
